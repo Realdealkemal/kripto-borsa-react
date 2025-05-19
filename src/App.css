@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.background {
+  background-image: url('/public/loginPage.jpg'); /* Arka plan resmi */
+  background-size: cover;                  /* Resim ekranı tamamen kaplasın */
+  background-position: center;             /* Resim ekranın ortasından hizalansın */
+  height: 100vh;                           /* Yükseklik: ekranın tamamı kadar */
+  display: flex;                           /* Flexbox kullanılıyor */
+  justify-content: center;                /* Yatayda ortala */
+  align-items: center;                    /* Dikeyde ortala */
+}
+
+
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Hafif saydam beyaz kutu */
+  padding: 30px;                               /* Kutunun iç boşluğu */
+  border-radius: 12px;                         /* Kenarların yumuşatılması (köşeler yuvarlak) */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);   /* Kutunun gölgesi (derinlik hissi verir) */
+  display: flex;                               /* Flexbox: içerideki elemanları dikey sırala */
+  flex-direction: column;
+  gap: 15px;                                   /* elementler arası boşluk */
+  width: 300px;                                /* Kutunun genişliği sabit */
+}
+
+
+.login-container input {
+  padding: 12px;           /* İç boşluk */
+  font-size: 16px;         /* Yazı boyutu */
+  border: 1px solid #ccc;  /* Gri çerçeve */
+  border-radius: 6px;      /* Hafif yuvarlak kenar */
+}
+
+.login-container input:focus {
+  border-color: #007bff;  /* Mavi kenarlık */
+  outline: none;          /* Tarayıcı varsayılan çizgisini kaldır */
+}
+
+.login-container button {
+  padding: 12px;             /* Butonun iç boşluğu */
+  background-color: #007bff; /* Mavi arka plan */
+  color: white;              /* Yazı rengi beyaz */
+  border: none;              /* Kenarlık yok */
+  font-size: 16px;           /* Yazı boyutu */
+  border-radius: 6px;        /* Yuvarlak kenar */
+  cursor: pointer;           /* Üzerine gelince el işareti */
+  transition: background-color 0.3s ease; /* Renk geçişi yumuşak */
+}
+
+.login-container button:hover {
+  background-color: #0056b3; /* Hover olunca daha koyu mavi */
+}
+

@@ -1,0 +1,52 @@
+
+.backgroundAnaMenu {
+  background-image: url('/public/deneme2.jpg'); /* Arka plan resmi */
+  background-size: cover;                  /* Resim ekranı tamamen kaplasın */
+  background-position: center;             /* Resim ekranın ortasından hizalansın */
+  height: 100vh;                           /* Yükseklik: ekranın tamamı kadar */
+  display: flex;                           /* Flexbox kullanılıyor */
+  justify-content: center;                /* Yatayda ortala */
+  align-items: center;                    /* Dikeyde ortala */
+}
+
+.anaMenu {
+  padding:10px;                               /* Kutunun iç boşluğu */
+  border-radius: 12px;                         /* Kenarların yumuşatılması (köşeler yuvarlak) */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);   /* Kutunun gölgesi (derinlik hissi verir) */
+  display: flex;                               /* Flexbox: içerideki elemanları sıralanışı düzgün */
+  flex-direction: row;
+  gap: 30px;                                   /* elementler arası boşluk */
+  width: fit-content;                                /* Kutunun genişliği */
+  position: fixed;
+  top: 0; /* ekranın en üstüne */
+  left:100px; /*ekranın en soluna*/
+  /*transform: translateX(10%); /*kendi genişliğinin yarısı kadar sağa kaydır  ( tüm içindeki elamanların toplamını de alır) */
+  z-index: 1000;
+}
+
+.anaMenu button {
+  padding: 20px 80px;               /* Genişletilmiş iç boşluk */
+  background-color:  black ;/* Parlak mavi (Dodger Blue) */
+  color: white;                     /* Yazı rengi beyaz */
+  border: none;                     /* Kenarlık yok */
+  font-size: 16px;                  /* Yazı boyutu */
+  border-radius: 6px;               /* Yuvarlatılmış köşe */
+  cursor: pointer;                  /* Hover'da el işareti */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4); /* Hafif parlak mavi gölge */
+}
+
+.anaMenu button:hover {
+  background-color:    #c2d1f0;/* Hover’da biraz daha açık mavi */
+  transform: translateY(-2px);      /* Hover’da hafif yukarı çıkma efekti */
+  box-shadow: 0 6px 15px rgba(51, 153, 255, 0.5); /* Daha belirgin gölge */
+}
+
+.anaMenu button:active {
+  background-color: #0d6efd;        /* Tıklama efekti */
+  transform: scale(0.98);           /* Hafif küçülme */
+}
+
+
+
